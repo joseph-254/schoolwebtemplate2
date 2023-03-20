@@ -1,0 +1,525 @@
+/*@import url('https://fonts.googleapis.com/css?family=Poppins');*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+H1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85)    
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+
+}
+H6 { 
+    font-size: 1.1rem;
+    color:rgb(24, 24, 49)
+}
+
+/*Top-nav*/
+
+top-nav{
+    position: fixed;
+    background-color: #F9F9FF;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 30px;
+    
+    border-bottom: .5px solid gray ;
+    z-index: 999;
+}
+top-nav .left-nav ul{
+    display: flex;
+}
+top-nav .left-nav ul li{
+    list-style: none;
+    color: gray;
+    margin-left: 20px
+}
+top-nav .right-nav ul{
+    display: flex;
+}
+top-nav .right-nav ul li{
+    list-style: none;
+    margin-left: 20px
+}
+top-nav .right-nav ul li a{
+    text-decoration: none;
+    color: gray;   
+
+}
+
+/* navigation section*/
+nav {
+    background-color: #F9F9FF;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    margin-top: 39px;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  
+} 
+
+nav img{
+    width: 80px;
+    cursor: pointer
+}
+#menu-btn{ 
+    width: 30px;
+    height: 30px;
+    display:none;
+}
+#menu-close{
+    width:  30px;
+    height: 30px;
+    margin: 30px 20px 10px 10px;
+    display: none;
+}
+nav .navigation {
+    display: flex;
+}
+nav .navigation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color:  gray; /*rgb(21, 21, 100)*/
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+nav .navigation ul li a:hover{
+    color: #FDC938;
+}
+
+
+/*Home*/
+
+#home {
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/class1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+#home h2{
+    color: #fff;
+    font-size:50px; 
+    letter-spacing: 1px;
+}
+#home p{
+    width: 50%;
+    color: #fff;
+    font-size:0.9rem; 
+    line-height: 25px;
+}
+#home .btn{
+    margin-top: 30px;
+}
+#home a{
+    
+     padding: 13px 35px;
+     background-color: #fff;
+     text-decoration: none;
+     font-size: 15px;
+     font-weight: 600;
+     border-radius: 5px;
+}
+#home a.blue{
+    color:#fff;
+    background-color: rgb(0, 30, 255);
+    transition: 0.3s ease;
+}
+#home a.blue:hover{
+    color:rgb(0, 30, 255);
+    background-color: #fff;
+}
+#home a.yellow{
+    color:#fff;
+    background-color: rgb(140, 255, 0);
+    transition: 0.3s ease;
+}
+#home a.yellow:hover{
+    color: rgb(0, 30, 255);
+    background-color: #fff;
+}
+
+
+/*feature section*/
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#features .fea-part{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px; 
+}
+#features .fea-box{
+    background: #F9F9FF;
+    text-align:start;
+}
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(76, 76, 100);
+    
+}
+
+/*course section*/
+#course {
+    padding:8vw 8vw 0 8vw;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#course .course-box{
+    background: #dedee4;
+    text-align:start;
+    position: relative;
+    /*height: 100%;*/
+}
+#course .course-box img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+   
+}
+#course .course-part{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px; 
+}
+#course .course-box .details{
+    padding:15px 15px 0 15px;
+}
+#course .course-part .cost{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(18, 88, 193);
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 70px;
+    position: absolute;
+    right: 15px;
+    bottom:115px;
+}
+
+
+/*Registration section*/
+#registration {
+    background-image: url(images/poster2.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#registration .date-details h1{
+    color: #fff;
+
+}
+
+#registration .date-details .time{
+    display: flex;
+    margin-top: 40px;
+}
+
+#registration .date-details .time .date{
+   background: rgba(255,255,255, 0.25);
+   padding: 13px 35px;
+   text-align: center;
+   border-radius: 10px;
+   margin: 0 5px 10px 5px;
+   backdrop-filter: blur(4px);
+   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+   font-size: 1.1rem;
+   font-weight: 600;
+   border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+#registration .Reg-form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px 10px 20px;
+    background-color: #F9F9FF;
+    border-radius: 10px;
+}
+#registration .Reg-form input{
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+
+}
+#registration .Reg-form input::placeholder{
+    color: #757373;
+    font-size: 0.9rem;
+
+}
+#registration .Reg-form .btn{
+    margin: 30px;
+}
+#registration .Reg-form  a{
+    padding: 13px 35px;
+    
+     text-decoration: none;
+     font-size: 15px;
+     font-weight: 600;
+     border-radius: 5px;
+}
+#registration .Reg-form  a.blue{
+    color:#fff;
+    background-color: rgb(0, 30, 255);
+}
+#registration .Reg-form  a.blue:hover{
+    color: rgb(0, 30, 255);
+    background-color:#565151 ;
+}
+
+
+/*community section*/
+#community{
+    /*padding: 20px 30px;*/
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+    
+}
+#community .people-part{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px; 
+}
+#community .people-part .people-card{
+    background-color: #fafaf1;
+    padding: 30px 10px;
+   
+}
+#community .people-part .people-card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    
+}
+.sociallinks{
+    margin-top: 15px;
+}
+.sociallinks i{
+    padding: 7px 10px;
+    border: 1px solid rgb(21,21,100);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.sociallinks i:hover{
+    background-color: rgb(21,21,100);
+    color:#fff;
+    border: 1px solid rgb(21,21,100);
+    cursor: pointer;
+}
+
+/*footer*/
+footer{
+    background-color: rgb(14, 14, 66);
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+footer .footer-col{
+    padding-bottom: 40px;
+}
+footer h3{
+    color: rgb(241, 240, 245);
+    font-weight: 600;
+    padding-bottom: 20px;
+
+}
+footer li{
+    list-style: none;  
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+footer li:hover{
+    color:rgb(241, 240, 245) ;
+}
+footer p {
+    color: #7b838a
+}
+footer .subscribe{
+    margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334F6C;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .subscribe a{
+    text-decoration: none;
+    padding: 15px 15px;
+    
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+footer .subscribe a.yellow{
+    color: #F9F9FF;
+    background-color: #FDC938;
+    transition: 0.3s ease;
+}
+footer .subscribe a.yellow:hover{
+    color: rgb(21,21,100);
+    background-color: #F9F9FF;
+}
+
+
+@media (max-width: 769px){
+    top-nav{
+        padding:15px 20px;
+    }
+    nav{
+        padding:15px 20px;
+    }
+    nav img{
+        width: 60px;
+    }
+    #menu-btn{ 
+        
+        display:initial;
+    }
+    #menu-close{
+        display: initial;
+
+        /*font-size: 1.6rem;
+        color: #fff;
+        padding: 30px 0 20px 20px;*/
+    }
+    nav .navigation ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        height: 100vh;
+        background: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(4.5px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        transition: 0.3s ease;
+    }
+    nav .navigation ul.active{
+        right: 0;
+    }
+    nav .navigation ul li{
+        padding: 20px 40px 20px 0px;
+        margin-left:20px ;
+    }
+    nav .navigation ul li a{
+        color: #fff;
+    }
+
+    #home p{
+        width: 90%;
+    }
+    #features{
+        padding: 8vw 4vw 0 4vw;
+    }
+    #course {
+        padding:8vw 10vw 0 10vw;
+       
+    }
+    #registration .Reg-form{
+        margin-right: 30px;
+        padding: 5px 10px 5px 10px;
+       
+    }
+    #registration .date-details{
+        padding: 30px 30px 0 20px;
+    }
+    #registration .date-details .time{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 475px){
+    #registration {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #registration .date-details .time{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    #registration .Reg-form input {
+        padding: 10px;
+        margin: 5px 0px 10px 0px;
+    }
+}
